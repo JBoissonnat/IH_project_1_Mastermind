@@ -232,8 +232,6 @@ def main():
             break
     
     if guess_tried == list_parameters[0]:
-        print("\n###### Game Over - You'll do better next time ######")
+        print("\n###### Game is over ######")
     
     return None
-
-
