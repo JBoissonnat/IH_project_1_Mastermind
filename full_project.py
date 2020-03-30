@@ -9,13 +9,33 @@ import random
 
 def generate_combination(len_comb):
     
-    possible_colors = ["yellow", "blue", "red", "green", "white"]
+    '''
+    This function generate a combination of colors. Each colors can appear several times.
+    
+    Input : length of the combination to generate (as an integer).
+    Output : a list of random colors of the length given in input.
+    
+    It's possible to modify the colors that are used by updating the possible colors list
+    inside the function.
+    '''
+    
+    possible_colors = ["yellow", "blue", "red", "green", "white", "black"]
     
     comb = [possible_colors[random.randint(0,5)] for i in range(len_comb)]
     
     return comb
 
 def verify_length(guess, a):
+    
+    '''
+    This function verifies the length of the guess combination that the player can enter
+    in the manage_players_entries function.
+    
+    Input : the list for which the length must be verified, and the length wanted.
+    Output : True if the list has the right length, False if not.
+    
+    '''
+    
     length_guess = len(guess)
     
     length_combination_to_guess = a
@@ -26,7 +46,19 @@ def verify_length(guess, a):
         return False
     
 
-def manage_players_entries(list_parameters) :
+def manage_players_entries(list_parameters):
+    
+    '''
+    This function asks the player to input its guess, and transforms it into a proper list
+    to compare it with the list of the combination to guess. It also uses the function
+    verify_length to check if the list provided is adequate.
+    
+    Input : list containing as second element a parameter of length.
+    Output : the guess of the player as a list.
+    
+    It's possible to modify the colors that can be used by updating the possible colors list
+    (liste) inside the function.
+    '''
     
     a = list_parameters[1]
     
@@ -34,16 +66,16 @@ def manage_players_entries(list_parameters) :
     
     while correct_guess == False:
         
-        saisie = input('Enter your color combination from [yellow, blue, red, green, white] ; There must be '+str(list_parameters[1])+' colors !')
+        saisie = input('Enter your color combination from [yellow, blue, red, green, white, black] ; There must be '+str(list_parameters[1])+' colors ! ')
     
         if "," in saisie:
             guess1 = saisie.split(",")
         else:
             guess1 = saisie.split()
 
-        print(guess1)
+        #print(guess1)
         guess=[]
-        liste=["yellow", "blue", "red", "green", "white"]
+        liste=["yellow", "blue", "red", "green", "white", "black"]
         for i in guess1 :
             if i in liste:
                 guess.append(i)
@@ -60,6 +92,21 @@ def manage_players_entries(list_parameters) :
 
 
 def compare_combination(comb_to_guess, player_comb):
+    
+    '''
+    This function compares the combination to guess with the player's guess. It counts
+    the number of elements that have a right color and position, and the number of elements
+    that have a correct color but not a correct position, in the player's guess combination.
+    It checks if the player found the right combination.
+    
+    Input : the combination to guess and the player's guess combination as lists.
+    Output : a True if the player has found the combination to guess, and a copy of
+    the original combination to guess as a list.
+    
+    The function modifies the list as it count the different indicators. Therefore a copy of the
+    original combination to guess has to be made because it stays the same. If the player is 
+    able to find the combination, it prints a winner message.
+    '''
     
     print("\n###### Lists entries")
         
@@ -114,18 +161,28 @@ def compare_combination(comb_to_guess, player_comb):
     
     if correct_pos == a:
         
-        print("\nYou found the correct combination !")
+        print("\n###### Congrats !!! You found the correct combination ! ######")
         
         correct_guess = True
         
         return correct_guess
     
     else:
-        print("\nWrong answer !")
+        print("\nWrong answer ! Keep searching...")
     
     return comb_to_guess_copy
 
 def set_parameters():
+    
+    '''
+    This function asks the player the number of tries that he will have to guess the combination,
+    and the length of the combinations in the game.
+    
+    Input : None.
+    Output : the two parameters inputs provided by the player as a list.
+    
+    Both parameters must be integers.
+    '''
     
     tries = int(input("Enter maximum number of tries (must be integer) : "))
         
@@ -137,7 +194,26 @@ def set_parameters():
 
 def main():
     
+    '''
+    This function is the main function of the Python Mastermind Game. It uses all the functions
+    created for the game, directly or indirectly.
+    
+    Input : None.
+    Output : None.
+    
+    It uses a while loop that keeps going if the maximum number of tries is not reached, and
+    it breaks if the combination to guess is found. The loop asks the player's guess combination
+    and compare the combination repeatedly. If the player is not able to find the combination,
+    it prints a game over message.
+    '''
+    
+    print("\n###### Welcome to the Python Mastermind Game ######")
+    
     list_parameters = set_parameters()
+    
+    #print("\nParameters choosed :")
+    #print("\nMaximum tries : "+str(list_parameters[0]))
+    #print("Combinations length : "+str(list_parameters[1]))
     
     combination_to_guess = generate_combination(list_parameters[1])
     
@@ -156,7 +232,9 @@ def main():
             break
     
     if guess_tried == list_parameters[0]:
-        print("\nGame Over - Play another time")
+        print("\n###### Game Over - You'll do better next time ######")
+    
+    return None
         
 ##########
 
