@@ -41,6 +41,10 @@ call the whole game.
 - full_project.py ; contains both the functions and the line to call the main function
 and the game. It was the file used to create most of the code.
 
+### Libraries
+
+- random
+
 ### Links
 
 Repository : https://github.com/JBoissonnat/IH_project_1_Mastermind
