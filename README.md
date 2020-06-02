@@ -1,4 +1,4 @@
-# Ironhack project 1 Mastermind
+# Ironhack project 1 Mastermind (group project)
 
 ![GitHub Logo](https://images-na.ssl-images-amazon.com/images/I/61QcYsfzQkL._AC_SY355_.jpg)
 
@@ -41,11 +41,8 @@ call the whole game.
 - full_project.py ; contains both the functions and the line to call the main function
 and the game. It was the file used to create most of the code.
 
-Otherwise the repository contains a .gitignore file, a LICENSE file and a README (that
-you're currently reading).
-
 Links
 
-Repository : https://github.com/JBoissonnat/project_mastermind1
+Repository : https://github.com/JBoissonnat/IH_project_1_Mastermind
 Presentation GS : https://docs.google.com/presentation/d/12KkFZ23lvVWq0GXDXWbt_2pdy8DF39V_GaGb6Ahn1gA/edit?usp=sharing
 
