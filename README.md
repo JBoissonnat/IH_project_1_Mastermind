@@ -2,7 +2,7 @@
 
 ![GitHub Logo](https://images-na.ssl-images-amazon.com/images/I/61QcYsfzQkL._AC_SY355_.jpg)
 
-## Project Description
+### Project Description
 
 The project was to recreate the Mastermind game in Python, using the basic knowledge
 acquired during the first week of the bootcamp. This game was selected because of its
@@ -24,14 +24,14 @@ position.
 The game stops whether when the player finds the combination or when has spent all his
 tries has been spent.
 
-#### Workflow
+### Workflow
 
 First the main organization was thinked about on Thursday, the functions to compare the
 combinations and to format the player's guess. Eventually on Saturday and Sunday, all
 the functions were made and fixed. The game was tested several times to check if it
 works with different settings and combinations.
 
-Organization
+### Organization
 
 The code was made with Jupyter and Spyder, and using Zoom in the same time to discuss
 about the ideas and the way to write it. The repository contains 3 pythons files :
@@ -41,7 +41,7 @@ call the whole game.
 - full_project.py ; contains both the functions and the line to call the main function
 and the game. It was the file used to create most of the code.
 
-Links
+### Links
 
 Repository : https://github.com/JBoissonnat/IH_project_1_Mastermind
 
