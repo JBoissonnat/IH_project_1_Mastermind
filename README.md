@@ -2,14 +2,14 @@
 
 ![GitHub Logo](https://images-na.ssl-images-amazon.com/images/I/61QcYsfzQkL._AC_SY355_.jpg)
 
-Project Description
+## Project Description
 
 The project was to recreate the Mastermind game in Python, using the basic knowledge
 acquired during the first week of the bootcamp. This game was selected because of its
 research/guessing angles. It was an interesting challenge to make Python understand how
 to compare lists properly to replicate the initial game.
 
-Rules
+### Rules
 
 In this version of the game the codifier is simply played by the computer. The player is 
 first allowed to choose the number of tries that he has to guess the combination, and 
@@ -24,7 +24,7 @@ position.
 The game stops whether when the player finds the combination or when has spent all his
 tries has been spent.
 
-Workflow
+#### Workflow
 
 First the main organization was thinked about on Thursday, the functions to compare the
 combinations and to format the player's guess. Eventually on Saturday and Sunday, all
