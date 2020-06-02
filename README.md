@@ -1,4 +1,5 @@
-# Ironhack project 1 Mastermind (group project)
+# Ironhack project 1 Mastermind
+Group project
 
 ![GitHub Logo](https://images-na.ssl-images-amazon.com/images/I/61QcYsfzQkL._AC_SY355_.jpg)
 
