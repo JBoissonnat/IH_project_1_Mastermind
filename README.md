@@ -1,5 +1,4 @@
-# project_mastermind1
-Repository for the 1st project
+# Ironhack project 1 Mastermind
 
 Project Description
 
