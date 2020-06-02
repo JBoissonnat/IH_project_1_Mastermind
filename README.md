@@ -1,6 +1,5 @@
 # Ironhack project 1 Mastermind
 
-
 ![GitHub Logo](https://images-na.ssl-images-amazon.com/images/I/61QcYsfzQkL._AC_SY355_.jpg)
 
 ### Project Description
