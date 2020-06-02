@@ -1,9 +1,10 @@
 # Ironhack project 1 Mastermind
-Group project
+
 
 ![GitHub Logo](https://images-na.ssl-images-amazon.com/images/I/61QcYsfzQkL._AC_SY355_.jpg)
 
 ### Project Description
+Group project
 
 The project was to recreate the Mastermind game in Python, using the basic knowledge
 acquired during the first week of the bootcamp. This game was selected because of its
